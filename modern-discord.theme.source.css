@@ -4545,8 +4545,8 @@ html #app-mount .userPopout-xaxa6l .avatarPositionPremium-3We5Ho {
 	width: calc(100% - 1px);
 	/* background-color: var(--background-tertiary); */
 	background-color: #eeb6ff21; /* Color arriba barra discord clicando fuera del discord @ruben */
-	 backdrop-filter: var(--blur-header); 
-	/*backdrop-filter: blur(40px);*/
+	/* backdrop-filter: var(--blur-header); */
+	backdrop-filter: blur(40px);
 	border-left: 1px var(--background-modifier-accent) solid;
 	height: 100vw;
 	position: fixed;
