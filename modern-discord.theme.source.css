@@ -71,6 +71,17 @@
 	font-weight: 400
 }
 
+/* Barrita volumen @ruben*/
+
+.mediaBarProgress-1xaPtl:after, .mediaBarProgress-1xaPtl:before {
+	background-color: #BC6EF9;
+}
+
+.barFill-23-gu- {
+    background: #BC6EF9;
+    height: 100%;
+}
+
 .guild-profile,
 .theme-dark,
 .theme-dark .theme-light,
@@ -12433,3 +12444,10 @@ textarea::-webkit-scrollbar {
 .colorable-1bkp8v.red-33-Lnk {
   background-color: var(--danger-color);
 }
+
+/* COLOR CHAT @ruben */
+
+.channelTextArea-2VhZ6z:focus-within {
+	box-shadow: 0 0 2px 2px var(--main-color);
+	border-radius: 22px;
+  }
