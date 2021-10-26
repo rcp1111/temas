@@ -91,10 +91,12 @@
 	--interactive-muted: #575757;
 	--background-primary: #111111;
 	--background-primary-transparent: rgba(26, 26, 26, 0.6);
-	--background-transparent-header: rgba(49, 49, 49, 0.5);
+	/* --background-transparent-header: rgba(49, 49, 49, 0.5); */
+	--background-transparent-header: #eeb6ff21; /* Color barra arriba discord @ruben */
 	--background-secondary: #181818;
 	--background-secondary-alpha: rgba(24, 24, 24, 0.7);
-	--background-secondary-alt: #333333;
+	/* --background-secondary-alt: #333333; */
+	--background-secondary-alt: #9659ac; /* Color al unirte a un canal conectar @ruben */
 	--background-tertiary: hsl(0, 0%, 19%);
 	--background-accent: hsl(0, 0%, 34%);
 	--background-floating: #1a1a1a;
@@ -145,10 +147,10 @@
 	--interactive-muted: #c7ccd1;
 	--background-primary: #fff;
 	--background-primary-transparent: rgba(26, 26, 26, 0.6);
-	--background-transparent-header: rgba(255, 255, 255, 0.74);
+	/* --background-transparent-header: rgba(255, 255, 255, 0.74); */ /* Se comenta porque arriba hay otro @ruben */
 	--background-secondary: #f2f3f5;
 	--background-secondary-alpha: rgba(242, 243, 245, 0.7);
-	--background-secondary-alt: #ebedef;
+	/* --background-secondary-alt: #ebedef; */ /* Se comenta porque arriba hay otro @ruben */
 	--background-tertiary: #e3e5e8;
 	--background-accent: #747f8d;
 	--background-floating: #fff;
@@ -1143,7 +1145,7 @@ body.foldercontentopened .base-3dtUhz {
 	width: 5px;
 	height: 5px;
 	margin-right: 0;
-	background-color: hsl(180, calc(var(--saturation-factor%, 1%)*7.7%), 97.5%);
+	background-color: hsl(180, calc(var(--saturation-factor, 1%)*7.7%), 97.5%);
 	border-radius: 2.5px;
 	display: inline-block;
 	opacity: 1;
@@ -2409,11 +2411,11 @@ body.foldercontentopened .base-3dtUhz {
 .colorDanger-2qLCe1,
 .colorDanger-2qLCe1 .radioSelection-1HmrQS,
 .colorDanger-2qLCe1.checkbox-3s5GYZ {
-	color: hsl(359, calc(var(--saturation-factor%, 1%)*82.6%), 59.4%)
+	color: hsl(359, calc(var(--saturation-factor, 1%)*82.6%), 59.4%)
 }
 
 .colorDanger-2qLCe1.focused-3afm-j {
-	background-color: hsl(359, calc(var(--saturation-factor%, 1%)*82.6%), 59.4%);
+	background-color: hsl(359, calc(var(--saturation-factor, 1%)*82.6%), 59.4%);
 	color: #fff
 }
 
@@ -2960,8 +2962,9 @@ body.foldercontentopened .base-3dtUhz {
 .panels-j1Uci_ .wrapper-24pKcD~.container-3baos1 .directionRow-3v3tfG:after {
 	content: "";
 	position: absolute;
-	background-color: var(--background-primary);
-	border-radius: var(--border-radius);
+	/* background-color: var(--background-primary); */
+	background-color: rgb(39, 27, 49); /* Cambiar color barra abajo silenciarse @ruben */
+	border-radius: var(--border-radius); 
 	height: 44px;
 	width: 148px;
 	z-index: 2;
@@ -4540,8 +4543,10 @@ html #app-mount .userPopout-xaxa6l .avatarPositionPremium-3We5Ho {
 #app-mount .guilds-1SWlCJ:after {
 	content: "";
 	width: calc(100% - 1px);
-	background-color: var(--background-tertiary);
-	backdrop-filter: var(--blur-header);
+	/* background-color: var(--background-tertiary); */
+	background-color: #eeb6ff21; /* Color arriba barra discord clicando fuera del discord @ruben */
+	/* backdrop-filter: var(--blur-header); */
+	backdrop-filter: blur(40px);
 	border-left: 1px var(--background-modifier-accent) solid;
 	height: 100vw;
 	position: fixed;
@@ -10937,6 +10942,12 @@ html:not(.app-focused) .sidebarRegionScroller-3MXcoP {
 	background-color: var(--icon-color)
 }
 
+/* Icono Discord arriba izquierda @ruben */
+#app-mount .guilds-1SWlCJ .tutorialContainer-2sGCg9 .childWrapper-anI2G9 {
+	background: #c787f8c7;
+}
+
+
 .container-3w7J-x a[aria-label*=app] .iconContainer-1BBaeJ {
 	--icon: var(--icon-app);
 	background-color: var(--icon-color)
@@ -11653,7 +11664,8 @@ html:not(.app-focused) .sidebarRegionScroller-3MXcoP {
 	opacity: 0;
 	pointer-events: all;
 	transition: opacity .125s ease-in-out, background-color .07s ease, transform .125s ease;
-	background-color: var(--background-tertiary);
+	/* background-color: var(--background-tertiary); */ /* Color antes de darle a conectar @ruben */
+	background-color: #663977;
 	color: var(--interactive-normal);
 	border-radius: 4px;
 	margin-left: 6px;
@@ -11934,8 +11946,12 @@ html:not(.app-focused) .sidebarRegionScroller-3MXcoP {
 	width: 210px; /* Longitud luz al hablar @ruben*/
 }
 
+.username-3KYl0N {
+    color: #cca4eb;
+}
+
 .voiceUser-1K6Xox .username-3KYl0N {
-	color: rgba(255, 255, 255, 0.5);
+	color: #cca4eb; /* Color muteo @ruben*/
 	transition: all 0.1s ease-in-out;
 }
 
@@ -12334,4 +12350,21 @@ textarea::-webkit-scrollbar {
 }
 .iconBadge-1N56q1.participating-1P_Z3z .icon-3s6X1M {
     color: #fff;
+}
+
+/* CABECERA CANAL DE VOZ EN COLOR @ruben */
+
+.container-1r6BKw .children-19S4PO .icon-22AiRD {
+  color: var(--main-color);
+  filter: drop-shadow(0 0 3px);
+  width: 22px;
+}
+
+/* Marquita arriba cuando estas en un server abierto @ruben */
+.item-2hkk8m {
+  width: 12px;
+  margin-left: -6px;
+  border-radius: 20px;
+  background: var(--main-color);
+  box-shadow: 0 0 20px -1px var(--main-color);
 }
