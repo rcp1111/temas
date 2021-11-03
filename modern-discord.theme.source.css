@@ -914,8 +914,8 @@
 }
 
 #app-mount .guilds-1SWlCJ [class*=expandedFolderBackground] {
-	width: var(--server-size);
-	left: 50%;
+	/* width: var(--server-size); */
+	left: 41%;
 	border-radius: calc(var(--server-size)/ 2);
 	transform: translateX(-50%)
 }
