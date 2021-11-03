@@ -914,8 +914,8 @@
 }
 
 #app-mount .guilds-1SWlCJ [class*=expandedFolderBackground] {
-	/* width: var(--server-size); */
-	left: 41%;
+	/* width: var(--server-size); */ /* arreglar bug @ruben */
+	left: 41%; /* arreglar bug antes 50 @ruben */
 	border-radius: calc(var(--server-size)/ 2);
 	transform: translateX(-50%)
 }
@@ -3647,7 +3647,7 @@ html {
 html.platform-osx #app-mount .typeMacOS-3EmCyP,
 html.platform-osx #app-mount .typeWindows-1za-n7 {
 	--frame-gap: 4px;
-	/* height: calc(var(--app-windowbar-height) - var(--frame-gap)); */
+	/* height: calc(var(--app-windowbar-height) - var(--frame-gap)); */ /* arreglar bug @ruben */
 	margin-top: var(--frame-gap);
 	user-select: none;
 	pointer-events: none;
