@@ -73,6 +73,7 @@
 
 /* Barrita volumen @ruben*/
 
+.mediaBarGrabber-1FqnbN, .mediaBarProgress-1xaPtl,
 .mediaBarProgress-1xaPtl:after, .mediaBarProgress-1xaPtl:before {
 	background-color: #1aa946;
 }
