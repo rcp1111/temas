@@ -3419,6 +3419,10 @@ body.foldercontentopened .base-3dtUhz {
 	height: 100%
 }
 
+.expandedFolderBackground-3ZDF05 { /* @ruben arreglar bug */
+    bottom: -8px;
+}
+
 .theme-dark .childWrapper-anI2G9 {
 	background-color: rgba(255, 255, 255, .1)
 }
